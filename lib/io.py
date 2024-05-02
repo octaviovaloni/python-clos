@@ -25,14 +25,14 @@ def clear_console() -> bool:
 
 def print_info(txt: str) -> bool:
     try:
-        print(colors["INFO"] + txt + Fore.WHITE)
+        print(colors["INFO"] + "info -> " + colors["NORMAL"] + txt + Fore.WHITE)
         return True
     except:
         return False
 
 def print_error(txt: str) -> bool:
     try:
-        print(colors["ERROR"] + txt + Fore.WHITE)
+        print(colors["ERROR"] + "error -> " + colors["NORMAL"] + txt + Fore.WHITE)
         return True
     except:
         return False
